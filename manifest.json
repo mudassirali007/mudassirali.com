@@ -1,0 +1,26 @@
+{
+  "name": "Mudassir Ali Portfolio - Web App Developer",
+  "short_name": "Ali Portfolio",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#1d1d1d",
+  "theme_color": "#1d1d1d",
+  "description": "PWA",
+  "lang": "en-US",
+  "orientation": "natural",
+  "icons": [{
+    "src": "icons/pwa/96.png",
+    "sizes": "96x96",
+    "type": "image/png",
+    "purpose": "any"
+  }, {
+    "src": "icons/pwa/512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
