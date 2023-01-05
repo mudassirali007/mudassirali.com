@@ -37,4 +37,5 @@ function showResult(text) {
 
 //checking and installing PWA
 checkRegistration();
-showResult('host updated');
+//deployed to netlify
+showResult('host updated https://mellow-nougat-029b69.netlify.app/');
