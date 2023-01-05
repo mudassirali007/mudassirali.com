@@ -37,3 +37,4 @@ function showResult(text) {
 
 //checking and installing PWA
 checkRegistration();
+showResult('host updated');
