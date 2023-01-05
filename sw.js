@@ -23,7 +23,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", event => {
-    console.log(`URL requested: ${event.request.url}`);
+    // console.log(`URL requested: ${event.request.url}`);
     const urlOrRequest = event.request.url
     // Cache-specific search
     caches.open(chacheName).then(cache => {
