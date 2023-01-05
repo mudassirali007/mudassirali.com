@@ -3,7 +3,7 @@ self.addEventListener("activate", event => {
     console.log("Service worker activated");
 });
 const chacheName = "mudassirali-PWA";
-const urlsToCache = ["./", "https://mudassirali007.github.io/mudassirali.com/manifest.json", "index.js", "icons/Logo.png", "icons/logo2.png", "icons/logoname.png", "font/flaticon.css", "style.css"]
+const urlsToCache = ["./", "manifest.json", "index.js", "icons/Logo.png", "icons/logo2.png", "icons/logoname.png", "font/flaticon.css", "style.css", "font/HelveticaNeueBold.ttf", "font/Flaticon.woff2"]
 
 self.addEventListener("install", (event) => {
     console.log("Service worker installed",self);
