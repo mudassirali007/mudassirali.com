@@ -2,10 +2,12 @@
     margin:0;}
 @font-face{
     font-family:'HelveticaBold';
-    src: url(font/HelveticaNeueBold.ttf);}
+    src: url(font/HelveticaNeueBold.ttf);
+    font-display: block;}
 @font-face{
     font-family:'LaBelle';
-    src: url(font/LaBelleAurore-Regular.ttf);}
+    src: url(font/LaBelleAurore-Regular.ttf);
+    font-display: block;}
 
 /********** PreLoader **********/
 .pls{
