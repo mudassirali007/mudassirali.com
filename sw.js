@@ -3,7 +3,7 @@ self.addEventListener("activate", event => {
     console.log("Service worker activated");
 });
 const chacheName = "mudassirali-PWA";
-const urlsToCache = ["./", "manifest.json", "index.js", "icons/Logo.png", "icons/logo2.png", "icons/logoname.png", "font/flaticon.css", "style.css", "font/HelveticaNeueBold.ttf", "font/Flaticon.woff2"]
+const urlsToCache = ["/", "./", ".", "manifest.json", "index.js", "icons/Logo.png", "icons/logo2.png", "icons/logoname.png", "font/flaticon.css", "style.css", "font/HelveticaNeueBold.ttf", "font/Flaticon.woff2"]
 
 self.addEventListener("install", (event) => {
     console.log("Service worker installed",self);
@@ -31,8 +31,17 @@ self.addEventListener("fetch", event => {
             console.log(cachedResponse  ? cachedResponse  : `${urlOrRequest} not in the cache`);
         })
     });
-
     event.respondWith(
+        caches.match(event.request)
+            .then(cachedResponse => {
+                    // It can update the cache to serve updated content on the next request
+                    return cachedResponse || fetch(event.request);
+                }
+            )
+    )
+
+    //Stale while revalidate
+    /*event.respondWith(
         caches.match(event.request).then(async cachedResponse => {
                 const networkFetch = await fetch(event.request).then(response => {
                     // update the cache with a clone of the network response
@@ -45,6 +54,12 @@ self.addEventListener("fetch", event => {
                 return cachedResponse || networkFetch;
             }
         )
-    )
+    )*/
+
+});
+
+self.addEventListener("fetch", event => {
+
+
 
 });
