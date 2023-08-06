@@ -153,6 +153,7 @@ a {
 }
 .bc {
   color: #a5a5a5;
+  fill: #a5a5a5;
   display: block;
   margin-top: 10px;
 }
@@ -161,6 +162,7 @@ a {
 .bc:hover,
 .ca:hover {
   color: #08fdd8;
+  fill: #08fdd8;
 }
 @media only screen and (max-width: 960px), only screen and (max-height: 500px) {
   .nav {
