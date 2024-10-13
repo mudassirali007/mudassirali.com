@@ -6,7 +6,7 @@ const chacheName = "mudassirali-PWA";
 const urlsToCache = [
   "/",
   "/profile.html",
-  "/images/mudassir-ali.jpg",
+  "/images/mudassir-ali.png",
   "manifest.json",
   "app.webmanifest",
   "index.js",
